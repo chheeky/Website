@@ -5,7 +5,10 @@
 <title>Grr Pt 2</title>
 </head>
 <body>
-  <img class="banner" src="images/reach.jpg" alt="Banner" />
+  <div class="container">
+    <img class="banner" src="images/reach.jpg" alt="Banner" />
+    <div class="centered">Reach Youth</div>
+  </div>
   <div class="navbar">
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -15,16 +18,24 @@
 </div>
 <div class="body">
   <h1>Hello Pt 2</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta arcu et mauris interdum facilisis. Maecenas eu ipsum turpis. Donec lorem magna, pretium tincidunt dolor ut, mattis dictum sapien. Pellentesque consequat maximus lectus, eget interdum dolor varius ac. Fusce tincidunt justo quam, ac ultrices turpis tincidunt vel. Fusce a vestibulum odio, quis porta ante. Donec eu est urna. Maecenas malesuada molestie eros non imperdiet.</p>
+  <p>Reach Youth happens every Friday night at 7pm.</p>
 
-  <p>Etiam tincidunt massa quis faucibus pretium. Duis mollis dui massa, ac consectetur orci condimentum a. Phasellus congue ligula non dolor imperdiet, et semper massa volutpat. Donec scelerisque dui et aliquam maximus. Curabitur malesuada nibh est. Pellentesque rutrum et sem id consequat. Integer iaculis mi at augue vehicula sollicitudin. Maecenas maximus eu est vehicula mollis. Mauris sed augue vitae sapien pharetra luctus a eget purus.</p>
-
-  <p>Aliquam faucibus elit ut hendrerit varius. Nullam ut eros at lectus ullamcorper interdum imperdiet ut sapien. Nam elementum sagittis lacus eu mattis. Praesent volutpat, leo eget blandit porta, nibh purus maximus lorem, non consequat lacus ex quis mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus maximus magna urna, eu elementum libero feugiat sit amet. Nullam ligula lorem, luctus laoreet eros vel, viverra tempor elit. Suspendisse aliquet quam at risus varius convallis.</p>
-
-  <p>Aliquam fermentum lorem viverra nisl feugiat rhoncus. Quisque condimentum diam sed pharetra fermentum. Aenean quis risus sit amet massa euismod mattis. Maecenas porta tincidunt purus, vestibulum lacinia dui gravida nec. Pellentesque leo arcu, placerat a orci ut, laoreet rutrum mauris. Cras at lorem sit amet mauris porta aliquet at ac odio. Mauris ut elementum lorem. Nam in elit libero. Nam bibendum, lorem ac pretium maximus, nisi elit malesuada augue, nec venenatis mauris sem et arcu. Proin quam purus, sagittis a ligula id, consequat cursus nisi. Aenean mollis mattis placerat.</p>
-
-  <p>Phasellus sit amet metus accumsan, consequat erat nec, porttitor ex. Integer congue, augue in interdum cursus, lectus est rutrum neque, a elementum turpis nisi ut diam. In nisi sapien, scelerisque vitae diam sit amet, condimentum maximus turpis. Maecenas consectetur quam ac venenatis interdum. Aliquam ultrices quam vitae sagittis tristique. Sed eu vehicula lorem. Morbi ac felis lorem. Maecenas iaculis sed felis in interdum. Vestibulum a ipsum nec urna facilisis congue porttitor eu nisl. Aenean quis dictum est. Cras ultrices ac massa vitae lacinia. Praesent a ipsum hendrerit, viverra enim non, dignissim metus. Nunc accumsan eros vel arcu malesuada congue. Proin ornare nisl nec quam vestibulum, hendrerit tristique turpis ultrices. Suspendisse vel nunc non magna viverra accumsan ac quis ex.</p>
-
+  <div id="map"></div>
+  <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      var uluru = {lat: -37.670670, lng: 175.307465};
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+    document.getElementById('map'), {zoom: 15, center: uluru});
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({position: uluru, map: map});
+    }
+  </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAw3Z95Ksn7mkbS3ynI1IZ_99qsJJgV6mU&callback=initMap">
+    </script>
 
 
 </div>
