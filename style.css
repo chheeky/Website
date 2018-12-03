@@ -1,23 +1,41 @@
 body
 {
-  background-color:green;
+  background-color: #c0c0c0 ;
+  font-size: 16px;
+  margin:0px 0px;
+  padding:0px 0px;
+}
 
+.banner
+{
+  width: 100%;
+  display: block;
+}
+
+.navbar
+{
+  width: 100%;
+  position: -webkit-sticky;  /*Safari*/
+  position: sticky;
+  top:0px;
 }
 
 ul
 {
-list-style-type: none;
-margin:0;
-padding:0;
-//color:
-background-color: #333;
-overflow: hidden;
+  width: inherit;
+  list-style-type: none;
+  margin:0px 0px;
+  padding:0px 0px;
+  background-color: #333;
+  overflow: hidden;
 
 }
 
 li
 {
-  float: left;
+  display: block;
+    background-color: #333;
+  float:left;
 
 }
 
@@ -30,15 +48,12 @@ li a
   text-decoration: none;
 }
 
-li a:hover
+li a:hover:not(.active)
 {
   background-color: #111;
 }
 
-h3
+.active
 {
-  color : yellow;
-  font-family:Arial;
-  font-size:40px;
-
+  background-color: #FF8000;
 }
