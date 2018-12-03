@@ -9,25 +9,27 @@ ul
 list-style-type: none;
 margin:0;
 padding:0;
+//color:
+background-color: #333;
+overflow: hidden;
 
 }
 
-li{
+li
+{
   display: inline;
 
 }
-body
+
+li a
 {
-  
+  text-decoration: none;
 }
+
 h3
 {
   color : yellow;
   font-family:Arial;
   font-size:40px;
 
-}
-
-li a{
-  text-decoration: none;
 }
